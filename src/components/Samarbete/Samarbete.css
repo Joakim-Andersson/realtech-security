@@ -1,0 +1,17 @@
+.samarbete h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+} 
+
+.samarbete__logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+img {
+    width: 100px;
+    margin: 0px 40px
+}
