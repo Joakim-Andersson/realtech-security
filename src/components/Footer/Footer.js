@@ -11,10 +11,10 @@ function Footer() {
     <footer className="footer">
       <ul className="footer__container">
         <li className="footer__item">
-          <Link to="/about">About</Link>
+          <Link to="/about">Om oss</Link>
         </li>
         <li className="footer__item">
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">Kontakta oss</Link>
         </li>
       </ul>
       <div className="footer__icons">
