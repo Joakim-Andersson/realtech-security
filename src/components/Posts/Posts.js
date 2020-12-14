@@ -1,20 +1,24 @@
 import { React, useState, useEffect } from "react";
+import Blogitem from "./Blogitem"
 
-import "./Produkter.css"
+import "./Posts.css"
 
 const query = `
 {
-    articleListCollection {
-      items {
-       table 
+  blogpostCollection {
+    items {
+      title
+      blogtext
+      photo {
+        url
       }
     }
-  }`
-  
+  }
+}
+`
 
-function Produkter() {
-    const [tableOfProducts, setTableOfProducts] = useState(null);
-
+function Posts() {
+    const [blogpost, setBlogpost] = useState(null);
 
     useEffect(() => {
         window
@@ -35,17 +39,26 @@ function Produkter() {
                 }
 
                 // rerender the entire component with new data
-                setTableOfProducts(data.articleListCollection.items[0].table.tableData);
+                setBlogpost(data.blogpostCollection.items);
             });
     }, []);
 
+    if (!blogpost) {
+        return "Loading...";
+    }
 
     return (
-        <div>
-            {tableOfProducts}
+        <div className="blogposts">
+            <header className="blogpost-header">
+                <h1>Artiklar</h1>
+            </header>
+            {blogpost.length === 0 ? (<div className="no-blogposts-line"> <h3 className="no-blogposts" >New articles coming soon!</h3> </div>) : (
+                <section className="blogsection"> {blogpost.map(
+                    post => (<Blogitem title={post.title} imageURL={post.photo.url} text={post.blogtext} />))}
+                </section>
+            )}
         </div>
-
-    )
+    );
 }
 
-export default Produkter
+export default Posts
