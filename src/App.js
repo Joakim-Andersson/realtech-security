@@ -4,6 +4,7 @@ import Nav from "./components/Nav/Nav"
 import Footer from "./components/Footer/Footer"
 import Produkter from "./components/Produkter/Produkter"
 import Main from "./components/Main/Main"
+import Posts from "./components/Posts/Posts"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Nav />
       <Switch>
       <Route exact path="/" component={Main} />
+      <Route exact path="/blog" component={Posts} />
       <Route exact path="/produkter" component={Produkter} />
       </Switch>
       <Footer />
