@@ -6,7 +6,7 @@ import "./Blogitem.css"
 
 function Blogitem({ title, imageURL, text }) {
     return (
-        <div className="blogitem-card" onClick={<Blogpost text={text} />}>
+        <div className="blogitem-card" onClick={<Blogpost title={title} imageURL={imageURL} text={text} />}>
             <img src={imageURL} className="blogitem-bild" alt="blogitem" />
             <div className="blogitem-text">
                 <p className="blogitem-title">{title}</p>
