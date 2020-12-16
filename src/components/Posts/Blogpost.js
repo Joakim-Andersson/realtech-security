@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Blogpost({text}) {
+function Blogpost({text, imageURL, title}) {
     return (
         <section className="blogpst-section">
             <img src={imageURL} className="blogpost-bild" alt="blogitem" />
