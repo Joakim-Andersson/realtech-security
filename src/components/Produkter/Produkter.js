@@ -12,18 +12,18 @@ const query = `
   }`
   
 
-function Produkter() {
+function Produkter({spaceID, deliveryID}) {
     const [tableOfProducts, setTableOfProducts] = useState(null);
 
 
     useEffect(() => {
         window
-            .fetch(`https://graphql.contentful.com/content/v1/spaces/agah5t541uqs/`, {
+            .fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceID}/`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                     // Authenticate the request
-                    Authorization: "Bearer PfsXvqWOP81opil_y9IZUajRi4tRiGr5rJrsAenAxeg",
+                    Authorization: `Bearer ${deliveryID}`,
                 },
                 // send the GraphQL query
                 body: JSON.stringify({ query }),
