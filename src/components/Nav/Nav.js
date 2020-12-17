@@ -8,8 +8,8 @@ import Logo from "../../assets/logo_transparent.png"
 
 
 function Nav() {
-    const [click, setClick] = useState(false)
-    const handleClick = () => setClick(!click)
+    const [clicked, setClicked] = useState(false)
+    const handleClick = () => setClicked(!clicked)
 
     return (
         <nav className="nav">
@@ -20,8 +20,7 @@ function Nav() {
                     </Link>
                 </div>
                 <ul
-                    className={`nav__menu ${click && "nav_menu active"}`}
-                    onClick={handleClick}
+                    className={clicked ? "nav__menu-active" : "nav__menu"}
                     role="presentation"
                 >
                     <li className="nav__item">
@@ -31,11 +30,14 @@ function Nav() {
                         <Link to="/produkter">Produkter</Link>
                     </li>
                     <li className="nav__item">
+                        <Link to="/blog">blogg</Link>
+                    </li>
+                    <li className="nav__item">
                         <Link to="/om-oss">Om oss</Link>
                     </li>
                 </ul>
                 <div className="mobile__icon" onClick={handleClick} role="presentation">
-                    {click ? <FaTimes /> : <FaBars />}
+                    {clicked ? <FaTimes /> : <FaBars />}
                 </div>
             </div>
         </nav>
