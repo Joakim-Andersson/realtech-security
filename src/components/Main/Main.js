@@ -14,7 +14,7 @@ function Main() {
                 <img className="header_image" src={Camera} alt="Realtech Security logo" />
                 <div className="header__text">
                     <h1> Vi tar oss an hela Norden</h1>
-                    <h3> <PhoneIcon fontSize="large" /> +46 070-19 15 116 </h3>
+                    <h3> <PhoneIcon fontSize="large" /> +46 70-19 15 116 </h3>
                     <button>Få gratis kostnadsförslag</button>
                 </div>
             </section>
