@@ -5,6 +5,8 @@ import Footer from "./components/Footer/Footer"
 import Produkter from "./components/Produkter/Produkter"
 import Main from "./components/Main/Main"
 import Posts from "./components/Posts/Posts"
+import About from "./components/About/About"
+import ContactInfo from "./components/ContactInfo/ContactInfo"
 
 // Contentful .ENV
 require('dotenv').config();
@@ -18,6 +20,8 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" component={Main} />
+          <Route exact path="/om-oss" component={About} />
+          <Route exact path="/kontakt" component={ContactInfo} />
           <Route exact path="/blog" render={() => <Posts spaceID={spaceID} deliveryID={deliveryID} />} />
           <Route exact path="/produkter" render={() => <Produkter spaceID={spaceID} deliveryID={deliveryID} />} />
         </Switch>

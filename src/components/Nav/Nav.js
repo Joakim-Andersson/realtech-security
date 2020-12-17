@@ -19,26 +19,56 @@ function Nav() {
                         <img src={Logo} alt="Realtech Security logo" />
                     </Link>
                 </div>
-                <ul
-                    className={clicked ? "nav__menu-active" : "nav__menu"}
-                    role="presentation"
-                >
-                    <li className="nav__item">
-                        <Link to="/">Hem</Link>
-                    </li>
-                    <li className="nav__item">
-                        <Link to="/produkter">Produkter</Link>
-                    </li>
-                    <li className="nav__item">
-                        <Link to="/blog">blogg</Link>
-                    </li>
-                    <li className="nav__item">
-                        <Link to="/om-oss">Om oss</Link>
-                    </li>
-                </ul>
-                <div className="mobile__icon" onClick={handleClick} role="presentation">
-                    {clicked ? <FaTimes /> : <FaBars />}
-                </div>
+                {clicked ? (
+                    <>
+                        <ul
+                            className="nav__menu-active"
+                            role="presentation"
+                            onClick={handleClick}
+                        >
+                            <li className="nav__item">
+                                <Link to="/">Hem</Link>
+                            </li>
+                            <li className="nav__item">
+                                <Link to="/produkter">Produkter</Link>
+                            </li>
+                            <li className="nav__item">
+                                <Link to="/blog">blogg</Link>
+                            </li>
+                            <li className="nav__item">
+                                <Link to="/om-oss">Om oss</Link>
+                            </li>
+                        </ul>
+                        <div className="mobile__icon" onClick={handleClick} role="presentation">
+                            {clicked ? <FaTimes /> : <FaBars />}
+                        </div>
+                    </>
+                ) : (
+                        <>
+                            <ul
+                                className="nav__menu"
+                                role="presentation"
+                            >
+                                <li className="nav__item">
+                                    <Link to="/">Hem</Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link to="/produkter">Produkter</Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link to="/blog">blogg</Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link to="/om-oss">Om oss</Link>
+                                </li>
+                            </ul>
+                            <div className="mobile__icon" onClick={handleClick} role="presentation">
+                                {clicked ? <FaTimes /> : <FaBars />}
+                            </div>
+                        </>
+                    )
+                }
+
             </div>
         </nav>
     )

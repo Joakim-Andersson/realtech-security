@@ -22,11 +22,14 @@
 .nav__logo {
   cursor: pointer;
   float: left;
-  margin: 5px;
+  margin: 5px 0px 0px 10px;
+  height: 70px;
 }
 
 .nav__logo img{
   margin: 5px;
+  height: 80%;
+  width: auto;
 }
 
 .mobile__icon {
