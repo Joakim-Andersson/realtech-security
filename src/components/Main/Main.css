@@ -11,22 +11,55 @@ section {
     text-align: center;
 }
 
-section h1 {
+.header__text {
+    background: rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     position: absolute;
+}
+
+section h1 {
     top: 50%;
     left: 30%;
-    transform: translate(-50%, -50%);
 }
+
 section h3 {
     display: flex;
     align-items: center;
-    text-align: center;
-    position: absolute;
-    margin-top: 5rem;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
 }
+
+section button {
+    padding: 10px;
+    background-color: rgb(15, 99, 255);
+    color: white;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
