@@ -17,17 +17,17 @@ const query = `
 }
 `
 
-function Posts() {
+function Posts({spaceID, deliveryID}) {
     const [blogpost, setBlogpost] = useState(null);
 
     useEffect(() => {
         window
-            .fetch(`https://graphql.contentful.com/content/v1/spaces/agah5t541uqs/`, {
+            .fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceID}/`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                     // Authenticate the request
-                    Authorization: "Bearer PfsXvqWOP81opil_y9IZUajRi4tRiGr5rJrsAenAxeg",
+                    Authorization: `Bearer ${deliveryID}`,
                 },
                 // send the GraphQL query
                 body: JSON.stringify({ query }),
@@ -40,8 +40,11 @@ function Posts() {
 
                 // rerender the entire component with new data
                 setBlogpost(data.blogpostCollection.items);
+                console.log(data)
+                console.log(data.blogpostCollection)
+                console.log(data.blogpostCollection.items)
             });
-    }, []);
+    }, [deliveryID, spaceID]);
 
     if (!blogpost) {
         return "Loading...";
