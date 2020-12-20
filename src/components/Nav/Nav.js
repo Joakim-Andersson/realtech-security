@@ -33,6 +33,9 @@ function Nav() {
                                 <Link to="/produkter">Produkter</Link>
                             </li>
                             <li className="nav__item">
+                                <Link to="/kontakt">Ta kontakt</Link>
+                            </li>
+                            <li className="nav__item">
                                 <Link to="/blog">blogg</Link>
                             </li>
                             <li className="nav__item">
