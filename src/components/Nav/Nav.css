@@ -47,8 +47,10 @@ display: none;
 }
 
 .nav__menu-active {
+  top: 0px;
   right: 0px;
-  background-color: blue; display: flex;
+  background-color: #0275d8;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   list-style-type: none;
