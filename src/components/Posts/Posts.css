@@ -1,3 +1,6 @@
+.blogpost-header h1{
+    margin: 20px;
+}
 .blogsection{
     display: flex;
     flex-wrap: wrap;

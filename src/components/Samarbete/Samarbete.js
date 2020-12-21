@@ -15,10 +15,9 @@ function Samarbete() {
             <div className="samarbete__logos">
                 <img src={telenor} alt="telenor logo" />
                 <img src={netel} alt="netel logo" />
-                <img src={altibox} alt="altibox logo" />
-                <img src={fibnet} alt="fibernet logo" />
                 <img src={globaltech} alt="globaltech logo" />
-
+                <img src={fibnet} alt="fibernet logo" />
+                <img src={altibox} alt="altibox logo" />
             </div>
         </section>
     )
