@@ -26,6 +26,11 @@ function Nav() {
                             role="presentation"
                             onClick={handleClick}
                         >
+                            <div className="nav__logo--hamburger" >
+                                <Link to={`/`}>
+                                    <img className="nav__logo--hamburger--img" src={Logo} alt="Realtech Security logo" />
+                                </Link>
+                            </div>
                             <li className="nav__item">
                                 <Link to="/">Hem</Link>
                             </li>
