@@ -38,7 +38,7 @@ function Produkter({spaceID, deliveryID}) {
                 // rerender the entire component with new data
                 setTableOfProducts(data.articleListCollection.items[0].table.tableData);
             });
-    }, []);
+    }, [spaceID, deliveryID]);
 
 
     return (

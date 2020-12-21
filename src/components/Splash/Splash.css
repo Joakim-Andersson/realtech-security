@@ -1,0 +1,9 @@
+.splash p{
+    color: white;
+    font-weight: 600;
+}
+
+.splash {
+    padding: 200px 100px 500px 100px;
+    background-color: #021726;
+}
