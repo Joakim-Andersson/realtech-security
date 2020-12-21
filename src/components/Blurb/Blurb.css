@@ -1,0 +1,40 @@
+.sidenav {
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    right: 0px;
+    top: 60%;
+    margin-left: 0;
+    padding: 10px 0px 10px 10px;
+}
+
+.sidenav p{
+    color: black;
+    text-align: right;
+    visibility:hidden
+}
+
+.phoneIcon {
+    margin-bottom: 2px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+.mailIcon {
+    margin-top: 2px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+.phoneIcon:hover {
+    font-size: 50px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.mailIcon:hover {
+    font-size: 50px;
+    transition: 0.4s;
+    cursor: pointer;
+}

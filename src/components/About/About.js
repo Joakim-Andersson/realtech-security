@@ -1,6 +1,4 @@
 import React from "react"
-import Logo from "../../assets/logo_transparent.png"
-
 
 import "./About.css"
 
