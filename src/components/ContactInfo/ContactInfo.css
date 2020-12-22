@@ -12,18 +12,19 @@
   
   .contact h3 {
     font-size: 2em;
-    margin: 10px;
     color: #41E09B;
   }
-  .contact h2 {
+  .contact a {
     font-size: 1em;
     margin: 10px;
+    color: #41E09B;
+    display:block;
   }
   
   .contact p {
     font-size: 18px;
-    margin: 20px;
-    max-width: 40%;
+    max-width: 600px;
+    margin: 10px;
     line-height: 1.6;
     text-align: center;
     width: auto;
