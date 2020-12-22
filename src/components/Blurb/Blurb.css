@@ -9,10 +9,10 @@
     padding: 10px 0px 10px 10px;
 }
 
-.sidenav p{
+.sidenav p {
     color: black;
     text-align: right;
-    visibility:hidden
+    visibility: hidden
 }
 
 .phoneIcon {
@@ -27,14 +27,34 @@
     background-color: rgba(0, 0, 0, 0.514);
 }
 
-.phoneIcon:hover {
-    font-size: 50px;
-    transition: 0.4s;
+.sidenav:hover {
     cursor: pointer;
+    background-color: #41E09B;
+    border-radius: 10px 0px 0px 10px;
 }
 
-.mailIcon:hover {
-    font-size: 50px;
-    transition: 0.4s;
-    cursor: pointer;
+.blurb__active {
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+    top: 60%;
+    margin-left: 0;
+    background-color: #41E09B;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.exitElement__active svg{
+    height:40px;
+}
+
+.sidenav__active {
+    margin-left: 10px;
+}
+
+.sidenav__active a{
+    color: white;
+    font-weight: 600;
 }
