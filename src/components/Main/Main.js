@@ -37,6 +37,8 @@ const style = {
 
     buttonStyle: {
         marginBottom: '20px',
+        backgroundColor: '#41E09B',
+        border: 'none',
     }
 };
 

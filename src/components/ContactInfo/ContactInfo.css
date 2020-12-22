@@ -1,19 +1,22 @@
 .contact {
     font-size: 1em;
-    margin: 20px;
-    margin-bottom: 40px;
+    padding: 20px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: white;
+    background-color: rgb(10, 10, 10);
   }
   
   .contact h3 {
-    font-size: 1.2em;
+    font-size: 2em;
     margin: 10px;
+    color: #41E09B;
   }
   .contact h2 {
-    font-size: 2em;
+    font-size: 1em;
     margin: 10px;
   }
   

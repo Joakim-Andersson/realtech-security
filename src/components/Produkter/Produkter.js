@@ -42,9 +42,9 @@ function Produkter({spaceID, deliveryID}) {
 
 
     return (
-        <div>
+        <section className="products__section">
             {tableOfProducts}
-        </div>
+        </section>
 
     )
 }

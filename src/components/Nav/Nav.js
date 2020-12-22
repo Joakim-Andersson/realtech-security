@@ -18,6 +18,7 @@ function Nav() {
                     <Link to={`/`}>
                         <img src={Logo} alt="Realtech Security logo" />
                     </Link>
+                    <p>Realtech Security</p>
                 </div>
                 {clicked ? (
                     <>

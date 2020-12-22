@@ -1,6 +1,6 @@
 .nav {
-  background: #161616;
-  height: 90px;
+  background: black;
+  height: 80px;
   display: flex;
   flex-direction: row;
   color: #FFFFFF;
@@ -14,6 +14,7 @@
 .nav__container {
   display: flex;
   align-content: center;
+  text-align: center;
   width: 100%;
   max-width: 1000px;
   z-index: 999;
@@ -22,20 +23,30 @@
 .nav__logo {
   cursor: pointer;
   float: left;
-  margin: 5px 0px 0px 10px;
+  margin-left: 10px;
   height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav__logo img {
   margin: 5px;
-  height: 80%;
+  height: 60px;
   width: auto;
+}
+
+.nav__logo p {
+  margin: 0px;
+  font-weight: 600;
+  visibility: hidden;
 }
 
 .mobile__icon {
   position: absolute;
   color: white;
-  top: 30px;
+  top: 15px;
   right: 30px;
   font-size: 2rem;
   cursor: pointer;
@@ -49,14 +60,17 @@
 .nav__logo--hamburger {
   margin-bottom: 20px;
 }
+
 .nav__logo--hamburger--img {
-width: 60px;
+  width: 60px;
+  margin-bottom: 40px;
 }
 
 .nav__menu-active {
   top: 0px;
   right: 0px;
-  background-color: #0275d8;
+  background-color: #000000;
+  border-left: 1px solid rgba(255, 255, 255, 0.39);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,8 +83,10 @@ width: 60px;
 }
 
 .nav__menu-active .nav__item {
-  font-size: 1.5rem;
-  margin: 20px;
+  font-size: 1em;
+  padding: 20px;
+  border-top: 1px solid white;
+  border-top: 1px solid white;
 }
 
 .nav__item {
@@ -90,7 +106,7 @@ width: 60px;
 }
 
 .nav__item a:hover {
-  color: #6588AC;
+  color: #41E09B;
 }
 
 @media screen and (min-width: 960px) {
@@ -99,6 +115,10 @@ width: 60px;
     max-width: 1400px;
     align-items: center;
     justify-content: space-between;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    z-index: 999;
   }
   .mobile__icon {
     display: none;
@@ -114,5 +134,12 @@ width: 60px;
   }
   .nav__item {
     margin: 0px 10px;
+  }
+  .nav__logo p {
+    visibility: visible;
+    text-transform: uppercase;
+  }
+  .nav__logo {
+    margin-bottom: 16px;
   }
 }

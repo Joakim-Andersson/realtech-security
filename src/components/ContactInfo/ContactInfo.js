@@ -7,22 +7,22 @@ import "./ContactInfo.css"
 function Contact() {
     return (
         <section className="contact">
-            <h2>
+            <h3>
                 Kontakta oss
-            </h2>
+            </h3>
             <p>
                 Vill du komma i kontakt med oss på RealTech så går det bra att kontakta oss via telefon, e-post eller brev.
                 Vår kundtjänst har öppet måndag till fredag 9.00-16.30!
             </p>
             <PhoneIcon />
-            <h3>
+            <h2>
                 Telefonnummer: +46 70-19 15 116
-            </h3>
+            </h2>
 
             <MailOutlineIcon />
-            <h3>
+            <h2>
                 Email: kontakt@realtech.se
-            </h3>
+            </h2>
             <p>
 
                 Postadress
