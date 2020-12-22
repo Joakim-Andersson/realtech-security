@@ -1,5 +1,10 @@
+.blogposts{
+background-color: rgb(10, 10, 10);
+}
+
 .blogpost-header h1{
-    margin: 20px;
+    margin: 10px;
+    color: #41E09B;
 }
 .blogsection{
     display: flex;
@@ -7,5 +12,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px 10px 20px 10px;
+    margin-bottom: 20px;
 }

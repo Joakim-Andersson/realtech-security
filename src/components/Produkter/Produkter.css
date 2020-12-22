@@ -1,9 +1,17 @@
+.products__section {
+background-color: white;
+padding: 30px;
+}
+
+
+
 container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 30px;
 }
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;

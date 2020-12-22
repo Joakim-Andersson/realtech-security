@@ -51,7 +51,7 @@ function Posts({spaceID, deliveryID}) {
     }
 
     return (
-        <div className="blogposts">
+        <section className="blogposts">
             <header className="blogpost-header">
                 <h1>Artiklar</h1>
             </header>
@@ -60,7 +60,7 @@ function Posts({spaceID, deliveryID}) {
                     post => (<Blogitem title={post.title} imageURL={post.photo.url} text={post.blogtext} />))}
                 </section>
             )}
-        </div>
+        </section>
     );
 }
 
